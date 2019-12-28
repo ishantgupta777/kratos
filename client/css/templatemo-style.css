@@ -558,7 +558,7 @@ footer .copyright a {
 	background: #080808;
 }
 
-.icon-bar {
+.icon-bar-2 {
 	position: fixed;
 	top: 50%;
 	-webkit-transform: translateY(-50%);
@@ -566,7 +566,7 @@ footer .copyright a {
 	transform: translateY(-50%);
 }
 
-.icon-bar a {
+.icon-bar-2 a {
 	display: block;
 	text-align: center;
 	padding: 16px;
@@ -575,7 +575,7 @@ footer .copyright a {
 	font-size: 20px;
 }
 
-.icon-bar a:hover {
+.icon-bar-2 a:hover {
 	background-color: #000;
 }
 
