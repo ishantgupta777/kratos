@@ -357,12 +357,13 @@ section#intro.intro2 {
 }
 
 #team img {
-	max-width: 200px;
-	max-height: 200px;
+	width: 170px;
+	height: 170px;
 	border-radius: 100%;
 	object-fit: cover;
 	object-position: top;
 	margin: auto;
+	margin-top: 100px;
 	margin-bottom: 20px;
 }
 
@@ -607,6 +608,8 @@ footer .copyright a {
 	margin-left: 75px;
 	font-size: 30px;
 }
+
+
 
 @media screen and (max-width:980px) {
 	.navbar-default .navbar-nav li a {
