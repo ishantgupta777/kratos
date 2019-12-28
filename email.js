@@ -7,7 +7,7 @@ sgMail.setApiKey(key)
 
 const sendWelcomeEmail = (body) => {
     sgMail.send({
-        to: 'kratosbitsgoa@gmail.com',
+        to: 'ishantgupta777@gmail.com',
         from: 'ishantgupta777@gmail.com',
         subject: 'New Message On Kratos Website',
         text: `name : ${body.name}
