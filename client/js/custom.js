@@ -39,6 +39,7 @@ $(function () {
 
 $('#contact-form').on('submit', (e) => {
   e.preventDefault()
+  $('#after-submit').html('Sending....')
   const name = document.querySelector('#name-field').value
   const email = document.querySelector('#email-field').value
   const text = document.querySelector('#text-field').value
@@ -49,4 +50,10 @@ $('#contact-form').on('submit', (e) => {
     text
   }
   axios.post('/contact', requestBody)
+    .then(res => $('#after-submit').html('Successfully Send'))
+    .catch(err => $('#after-submit').html('Unsuccessful in sending the mail...'))
+
+  document.querySelector('#name-field').value = ''
+  document.querySelector('#email-field').value = ''
+  document.querySelector('#text-field').value = ''
 })
