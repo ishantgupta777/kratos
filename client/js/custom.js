@@ -1,4 +1,3 @@
-
 // ------- PRELOADER -------//
 $(window).load(function () {
   $('.preloader').fadeOut("slow"); // set duration in brackets    
@@ -49,6 +48,5 @@ $('#contact-form').on('submit', (e) => {
     email,
     text
   }
-  requestBody = JSON.stringify(requestBody)
-  axios.post('/contact',requestBody)
+  axios.post('/contact', requestBody)
 })

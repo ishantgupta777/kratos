@@ -7,10 +7,7 @@ const sendMail = require('./email')
 const publicPath = path.join(__dirname, './client')
 
 const app = express()
-
-app.use(bodyParser.urlencoded({
-    extended: false
-}))
+app.use(express.json())
 app.use(express.static(publicPath))
 
 
@@ -21,11 +18,10 @@ app.listen(process.env.PORT, () => {
 })
 
 app.get('/', (req, res) => {
-    console.log(111)
     res.sendFile(publicPath)
 })
 
-app.post('/contact', (req, res) => {
-    sendMail.sendWelcomeEmail(req.body)
+app.post('/contact', async (req, res) => {
+    await sendMail.sendWelcomeEmail(req.body)
     res.status(200).send()
 })
