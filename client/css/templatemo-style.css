@@ -162,6 +162,11 @@ h6 {
 	letter-spacing: 2px;
 }
 
+#home h4 a {
+	color: white;
+	text-decoration: none;
+}
+
 #home .btn {
 	background: #eb5424;
 	border-radius: 4px;
