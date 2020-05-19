@@ -351,6 +351,7 @@ section#intro.intro2 {
 	color: #ffffff;
 	padding: 20px 12px;
 	position: relative;
+	margin: 0% 10%;
 }
 
 #team a {
@@ -364,7 +365,7 @@ section#intro.intro2 {
 #team img {
 	width: 170px;
 	height: 170px;
-	border-radius: 100%;
+	border-radius: 90%;
 	object-fit: cover;
 	object-position: top;
 	margin: auto;
@@ -506,6 +507,11 @@ section#intro.intro2 {
 #contact input[type="submit"]:hover {
 	background-color: #202020;
 }
+#contact a
+{
+	color: whitesmoke;
+	font-size: 25px;
+}
 
 /* footer section */
 footer {
@@ -640,6 +646,17 @@ footer .copyright a {
 	.navbar-brand {
 		padding-top: 6px;
 	}
+}
+@media (max-width:972px)
+{
+	#team .team-des {
+		background-color: #eb5424;
+		color: #ffffff;
+		padding: 20px 12px;
+		position: relative;
+		margin: 0% 0%;
+	}
+	
 }
 
 @media (max-width:400px) {
