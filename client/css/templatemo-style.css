@@ -243,7 +243,7 @@ h6 {
 }
 
 /* intro section */
-#intro {
+.intro1 {
 	padding-top: 180px;
 	padding-bottom: 40px;
 }
@@ -258,7 +258,7 @@ h6 {
 	padding-bottom: 150px;
 }
 
-section#intro.intro1 {
+.intro1 {
 	padding-bottom: 0px;
 }
 
@@ -269,9 +269,20 @@ section#intro.intro2 {
 #intro h2 {
 	padding-bottom: 10px;
 }
-
-#intro h4 {
-	padding-bottom: 16px;
+.intro2 h2{
+	line-height: 30px;
+}
+.intro2
+{
+	padding-bottom: 0%;
+}
+.intro3
+{
+	padding-top: 0%;
+	margin-top: 0%;
+}
+.intro3 h2{
+	line-height: 30px;
 }
 
 /* work section */
